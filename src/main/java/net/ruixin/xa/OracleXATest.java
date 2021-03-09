@@ -87,5 +87,6 @@ class OracleXATest {
  * 参考链接：
  * http://www.orafaq.com/wiki/XA_FAQ
  * https://oracle-base.com/articles/11g/dbms_xa_11gR1
- *
+ * https://docs.oracle.com/cd/E11882_01/appdev.112/e40758/d_xa.htm#ARPLS69152
+ * https://docs.oracle.com/cd/E11882_01/appdev.112/e41502/adfns_xa.htm
  */
