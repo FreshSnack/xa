@@ -13,7 +13,6 @@ import java.sql.PreparedStatement;
 
 /**
  * MySql xa test
- * https://blog.csdn.net/l1028386804/article/details/79769043
  *
  * @author mxding
  * @date 2021-03-08 10:42
@@ -70,3 +69,28 @@ public class MySQLXATest {
         }
     }
 }
+
+/*
+ * 参考链接：
+ * https://blog.csdn.net/l1028386804/article/details/79769043
+ */
+
+/*
+ * Start Example:
+ * mysql> XA START 'g12345';  //其中'g12345’就是xid的值
+ * Query OK, 0 rows affected (0.00 sec)
+ *
+ * mysql> INSERT into t(name) VALUES ('rm1po')
+ * Query OK, 1 row affected (0.00 sec)
+ *
+ * mysql> XA END 'g12345';
+ * Query OK, 0 rows affected (0.00 sec)
+ *
+ * mysql> XA PREPARE 'g12345';
+ * Query OK, 0 rows affected (0.01 sec)
+ *
+ * mysql> XA COMMIT 'g12345';
+ * Query OK, 0 rows affected (0.01 sec)
+ *
+ * End Example
+ */

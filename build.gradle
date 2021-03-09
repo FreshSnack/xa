@@ -19,9 +19,9 @@ configurations {
 }
 
 repositories {
-//    maven {
-//        url "http://maven.ruixin.net/repository/RXGroup/"
-//    }
+    maven {
+        url "http://maven.ruixin.net/repository/RXGroup/"
+    }
     mavenCentral()
 }
 
@@ -38,7 +38,9 @@ dependencies {
 //    implementation group: 'oracle', name: 'ojdbc6', version: '1.0.0'
 
     // https://mvnrepository.com/artifact/com.github.noraui/ojdbc8
-    implementation group: 'com.github.noraui', name: 'ojdbc8', version: '12.2.0.1'
+//    implementation group: 'com.github.noraui', name: 'ojdbc8', version: '12.2.0.1'
+// https://mvnrepository.com/artifact/com.github.noraui/ojdbc7
+    implementation group: 'com.github.noraui', name: 'ojdbc7', version: '12.1.0.2'
 
     // https://mvnrepository.com/artifact/com.alibaba/druid
     implementation group: 'com.alibaba', name: 'druid', version: '1.2.5'
